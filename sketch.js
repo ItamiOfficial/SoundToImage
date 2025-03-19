@@ -19,7 +19,7 @@ var c2;
 var alphaMultiplier = 2;
 
 function preload(){
-  sound = loadSound('audio/s80s.wav');
+  sound = loadSound('audio/oink.mp3');
 }
 
 function mousePressed(){
