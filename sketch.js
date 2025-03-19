@@ -37,7 +37,7 @@ function mousePressed(){
 }
 
 function setup() {
-  createCanvas(1280, 720);
+  createCanvas(windowWidth, windowHeight);
   background(bgColor);
 
   // FFT
@@ -140,4 +140,9 @@ function rotatePoint(x, y, amount){
     x: cos(amount) * x - sin(amount) * y, 
     y: sin(amount) * x + cos(amount) * y
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  background(bgColor);
 }
